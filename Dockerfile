@@ -1,6 +1,9 @@
 # Builds a new laravel project
 FROM php:fpm
 
+# Label for container push repo
+LABEL org.opencontainers.image.source="https://github.com/agusacevedoanazco/laravel-build-init"
+
 # update cache and packages
 RUN apt update && apt upgrade -y
 
